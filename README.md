@@ -27,6 +27,6 @@ This model is also an implementation of the model described above however in thi
 ## 3. Seq2Seq model with with bi-directional uni-layer GRU Encoder and Uni-directional uni-layer GRU Decoder with Attention Mechanism. 
 This model is based on the idea proposed by Bahdanau et al. in the paper Neural Machine Translation by Jointly Learning to Align and Translate. The model uses attention mechanism, where the decoding process is guided by an attention vector which represents which words in the source we should pay the most attention to
 in order to correctly decode the next word.
-<a href="https://colab.research.google.com/drive/1Sto43hDfcJFrb1C7fWpRxVmyLnUKUqv4?usp=sharing">
+<a href="https://colab.research.google.com/drive/12n9aWI69h4ouDeIld0FlEAMaqcpdHCnQ?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
