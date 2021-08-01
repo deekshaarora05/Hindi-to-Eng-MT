@@ -8,24 +8,25 @@ to train the models. The dataset has been curated from the following publicly av
 </a> 
 The models are evaluated on the basis of Bleu-4 score, Bleu-4 macro score and Meteor score. 
 ## Note: Using Google Colab with GPU runtime is recommended. 
-Link to the files needed: https://drive.google.com/drive/u/0/folders/1w5Wn1YSpJHNgecwCmwXrbmpuAziuyQSx
+All the datasets and models can be accessed here: https://drive.google.com/drive/folders/12Blaa-pyPm9bCMpvCRWQRIGNfKRWsNG7?usp=sharing
 
 
 Different Models used for carrying out the NMT are:
-1. Seq2Seq (LSTM) with uni-directional bi-layer (Encoder and Decoder), with single context vector fed to initial time-step of Decoder.
-
-<a href="https://colab.research.google.com/drive/1dzWz6Y9rX7-gPzcIMOjVT5rO4sIHOpFX?usp=sharing">
+## 1. Seq2Seq (LSTM) with uni-directional bi-layer (Encoder and Decoder), with single context vector fed to initial time-step of Decoder.
+This notebook implements LSTM based uni-directional bi-layer Encoder and Decoder and uses torchtext to do all of the heavy lifting with regards to text processing.
+<a href="https://colab.research.google.com/drive/1DLqPtqfFTCcSlh0rkD5uM6gaL69Kbd0o?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-2. Seq2Seq (GRU) with uni-directional uni-layer (Encoder and Decoder) with single context vector fed to each time-step of Decoder.
-
-<a href="https://colab.research.google.com/drive/1X7RmqseeoDcnY16fW2Su07MU8A-U_LBn?usp=sharing">
+## 2. Seq2Seq Model with uni-directional bi-layer LSTM Encoder and Decoder, with single context vector fed to initial time-step of Decoder.
+This model is also an implementation of the model described above however in this phase all the functionalities of torchtext are replaced using light weight functions provided by python. 
+<a href="https://colab.research.google.com/drive/1Sto43hDfcJFrb1C7fWpRxVmyLnUKUqv4?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-3. Seq2Seq (GRU) with with bi-directional uni-layer Encoder and Uni-directional uni-layer Decoder with Attention Mechanism
-
-<a href="https://colab.research.google.com/drive/1rChM3nAflAQ3mMOTTne4R8vGjwK4sIss?usp=sharing">
+## 3. Seq2Seq model with with bi-directional uni-layer GRU Encoder and Uni-directional uni-layer GRU Decoder with Attention Mechanism. 
+This model is based on the idea proposed by Bahdanau et al. in the paper Neural Machine Translation by Jointly Learning to Align and Translate. The model uses attention mechanism, where the decoding process is guided by an attention vector which represents which words in the source we should pay the most attention to
+in order to correctly decode the next word.
+<a href="https://colab.research.google.com/drive/1Sto43hDfcJFrb1C7fWpRxVmyLnUKUqv4?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
