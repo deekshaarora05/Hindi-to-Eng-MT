@@ -7,12 +7,12 @@ to train the models. The dataset has been curated from the following publicly av
 <a href="https://opus.nlpl.eu/ and https://www.opensubtitles.org/en/search">
 </a> 
 The models are evaluated on the basis of Bleu-4 score, Bleu-4 macro score and Meteor score. 
-## Note: Using Google Colab with GPU runtime is recommended. 
+#### Note: Using Google Colab with GPU runtime is recommended. 
 All the datasets and models can be accessed here: https://drive.google.com/drive/folders/12Blaa-pyPm9bCMpvCRWQRIGNfKRWsNG7?usp=sharing
 
 
 Different Models used for carrying out the NMT are:
-## 1. Seq2Seq (LSTM) with uni-directional bi-layer (Encoder and Decoder), with single context vector fed to initial time-step of Decoder.
+## 1. Seq2Seq LSTM based uni-directional bi-layer Encoder and Decoder, with single context vector fed to initial time-step of Decoder using TorchText functionalities.
 This notebook implements LSTM based uni-directional bi-layer Encoder and Decoder and uses torchtext to do all of the heavy lifting with regards to text processing.
 <a href="https://colab.research.google.com/drive/1DLqPtqfFTCcSlh0rkD5uM6gaL69Kbd0o?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
